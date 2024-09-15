@@ -1,0 +1,214 @@
+.hatsune-miku {
+  width: 300px;
+  height: 500px;
+  position: relative;
+  margin: 50px auto;
+}
+
+/* 髪 */
+.hair {
+  width: 120px;
+  height: 200px;
+  background-color: #00FFFF;
+  position: absolute;
+  top: -20px;
+  left: 90px;
+  border-radius: 50% 50% 0 0;
+  z-index: 1;
+}
+
+.hair::before, .hair::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 300px;
+  background-color: #00FFFF;
+  top: 100px;
+}
+
+.hair::before {
+  left: -20px;
+  transform: rotate(5deg);
+}
+
+.hair::after {
+  right: -20px;
+  transform: rotate(-5deg);
+}
+
+/* 前髪 */
+.bangs {
+  width: 100px;
+  height: 60px;
+  background-color: #00FFFF;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  border-radius: 50% 50% 0 0;
+  z-index: 3;
+}
+
+.bangs::before, .bangs::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  background-color: #00FFFF;
+  top: 20px;
+}
+
+.bangs::before {
+  left: -10px;
+  transform: rotate(-10deg);
+}
+
+.bangs::after {
+  right: -10px;
+  transform: rotate(10deg);
+}
+
+/* 頭 */
+.head {
+  width: 100px;
+  height: 130px;
+  background-color: #FFE3E1;
+  border-radius: 50% 50% 40% 40%;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  z-index: 2;
+}
+
+/* 目 */
+.eye {
+  width: 25px;
+  height: 35px;
+  background-color: #fef4f4;
+  border-radius: 20%;
+  position: absolute;
+  top: 60px;
+  z-index: 4;
+}
+
+.eye.left {
+  left: 110px;
+}
+
+.eye.right {
+  right: 110px;
+}
+
+.eye::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 7px;
+}
+
+/* 口 */
+.mouth {
+  width: 20px;
+  height: 15px;
+  border-bottom: 2px solid #FF69B4;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  top: 100px;
+  left: 140px;
+  z-index: 4;
+}
+
+/* 体 */
+.body {
+  width: 80px;
+  height: 150px;
+  background-color: #808080;
+  position: absolute;
+  top: 130px;
+  left: 110px;
+  z-index: 2;
+}
+
+/* ネクタイ */
+.tie {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 50px solid #FF69B4;
+  position: absolute;
+  top: 130px;
+  left: 135px;
+  z-index: 3;
+}
+
+/* 腕 */
+.arm {
+  width: 20px;
+  height: 100px;
+  background-color: #FFE3E1;
+  position: absolute;
+  top: 150px;
+  z-index: 1;
+}
+
+.arm.left {
+  left: 80px;
+  transform: rotate(20deg);
+}
+
+.arm.right {
+  right: 80px;
+  transform: rotate(-20deg);
+}
+
+/* スカート */
+.skirt {
+  width: 110px;
+  height: 80px;
+  background-color: #404040;
+  position: absolute;
+  top: 280px;
+  left: 95px;
+  border-radius: 0 0 20px 20px;
+  z-index: 2;
+}
+
+/* 足 */
+.leg {
+  width: 20px;
+  height: 120px;
+  background-color: #FFE3E1;
+  position: absolute;
+  top: 360px;
+  z-index: 1;
+}
+
+.leg.left {
+  left: 120px;
+}
+
+.leg.right {
+  right: 120px;
+}
+
+/* ブーツ */
+.boot {
+  width: 40px;
+  height: 60px;
+  background-color: #000;
+  position: absolute;
+  top: 440px;
+  z-index: 2;
+}
+
+.boot.left {
+  left: 110px;
+}
+
+.boot.right {
+  right: 110px;
+}
